@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1546386749437.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "596218126",
+    "id" : "71AA3274",
+    "lastKnownWriteTime" : 1546386817,
+    "last_content_update" : 1546386817906,
+    "path" : "~/Documents/shiny/proteinsearchbykeywords/man/pfampdbsrch2.Rd",
+    "project_path" : "man/pfampdbsrch2.Rd",
+    "properties" : {
+        "cursorPosition" : "13,1",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_doc"
+}
