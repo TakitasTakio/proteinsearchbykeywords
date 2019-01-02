@@ -1,4 +1,4 @@
-Package: proteinsearchbykeywords
+##Package: proteinsearchbykeywords
 Type: Package
 Title: Generate related pfam/pdb data by inputting function key words
 Version: 0.1.0
