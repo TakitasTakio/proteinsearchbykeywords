@@ -1,6 +1,7 @@
 # Search pfam and pdb data from protein function keywords!
 #
 #
+install.packages("devtools")
 library(devtools)
 library(roxygen2)
 library(rvest)
@@ -57,6 +58,17 @@ obtain_pdb_from_keyword = function(searchItem="immunity") {
     defense.data=data.frame(md.pfam, md.id, md.dsp)
     colnames(defense.data)=c('pfam-ACCN', 'ID', 'Description')
 
+    # new.pp.lib=read.delim(file = "data/pdb_pfam_mapping.txt")
+    #
+    # new.pp.lib$PFAM_ACC_ABS=str_sub(new.pp.lib$PFAM_ACC,1,7)
+    #
+    # defense.data$pdb.id=1
+    # defense.data$pdb.chain=1
+    # for(i in 1:nrow(defense.data)){
+    # defense.data$pdb.id[i]=new.pp.lib$PDB_ID[new.pp.lib$PFAM_ACC_ABS==defense.data$`pfam-ACCN`[i]]
+    # defense.data$pdb.chain[i]=new.pp.lib$CHAIN_ID[new.pp.lib$PFAM_ACC_ABS==defense.data$`pfam-ACCN`[i]]
+    # }
+
     pfam.to.pdb_no= data.frame(PFAMPDB)
     conv.to.pdb=function(x){
     return(
@@ -66,7 +78,7 @@ obtain_pdb_from_keyword = function(searchItem="immunity") {
   defense.data$pdb_id=defense.data$`pfam-ACCN`
   defense.pdb=lapply(defense.data$pdb_id, conv.to.pdb)
   print(defense.pdb)
-  ########"The pdb list order indexes correspond to the order index number of pfams, please use obtain_full_pfampdb() to get the full table"
+     ########"The pdb list order indexes correspond to the order index number of pfams, please use obtain_full_pfampdb() to get the full table"
 }
 }
 
