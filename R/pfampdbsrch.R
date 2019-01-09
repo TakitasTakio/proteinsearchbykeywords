@@ -4,11 +4,11 @@
 #install.packages("devtools")
 #library(devtools)
 #library(roxygen2)
-install.packages("rvest")
-library(rvest)
-library(bio3d)
-library(PFAM.db)
-library(stringr)
+#install.packages("rvest")
+#library(rvest)
+#library(bio3d)
+#library(PFAM.db)
+#library(stringr)
 
 obtain_from_keywords <- function(keywords="immunity"){
   if(is.null(keywords) ){
