@@ -1,8 +1,8 @@
 # Search pfam and pdb data from protein function keywords!
 #
 #
-install.packages("devtools")
-library(devtools)
+#install.packages("devtools")
+#library(devtools)
 library(roxygen2)
 library(rvest)
 library(bio3d)
