@@ -4,6 +4,7 @@
 #install.packages("devtools")
 #library(devtools)
 #library(roxygen2)
+install.packages("rvest")
 library(rvest)
 library(bio3d)
 library(PFAM.db)
